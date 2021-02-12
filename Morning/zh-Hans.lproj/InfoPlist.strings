@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Morning
+
+  Created by kenshin van on 2021/2/11.
+  
+*/
+CFBundleDisplayName="早上";
+NSCalendarsUsageDescription = "嚯嚯！画画的贝贝！";
