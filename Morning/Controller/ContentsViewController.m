@@ -7,6 +7,7 @@
 
 #import "ContentsViewController.h"
 #import "InternationalizationVC.h"
+#import "YYModelBaseUseVC.h"
 
 @interface ContentsViewController ()
 
@@ -25,12 +26,18 @@
 }
 
 - (void)loadData{
+    //这里用时间的降序排列
+    [self baseTableVC_addDataWithTitle:@"YYModel的简单使用" andDetail:@"2021.2.13"];
     [self baseTableVC_addDataWithTitle:@"国际化" andDetail:@"2021.2.11"];
-    
 }
 
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"YYModel的简单使用"]) {
+        YYModelBaseUseVC *vc = [[YYModelBaseUseVC alloc] init];
+        [self base_pushVC:vc];
+        return;
+    }
     if([title isEqualToString:@"国际化"]){
         InternationalizationVC *vc = [[InternationalizationVC alloc] init];
         [self base_pushVC:vc];
