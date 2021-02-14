@@ -18,6 +18,9 @@
 		9D0F7DD125D3CFC20028B615 /* ContentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F7DD025D3CFC20028B615 /* ContentsViewController.m */; };
 		9D9FCDBF25D7491000E552BA /* YYModelBaseUseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FCDBE25D7491000E552BA /* YYModelBaseUseVC.m */; };
 		9D9FCDCE25D7519B00E552BA /* ModelPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FCDCD25D7519B00E552BA /* ModelPerson.m */; };
+		9D9FCDD525D7560700E552BA /* MasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FCDD425D7560700E552BA /* MasonryVC.m */; };
+		9DAAC40225D8BC5C00681606 /* readme in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAC40125D8BC5C00681606 /* readme */; };
+		9DAAC40825D8C32300681606 /* MasonryPriorityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAC40725D8C32300681606 /* MasonryPriorityVC.m */; };
 		9DBB032E25D4A3690080BEAD /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB032A25D4A3690080BEAD /* BaseVC.m */; };
 		9DBB032F25D4A3690080BEAD /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB032D25D4A3690080BEAD /* BaseTableVC.m */; };
 		9DBB033B25D4A46F0080BEAD /* InternationalizationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB033A25D4A46F0080BEAD /* InternationalizationVC.m */; };
@@ -66,6 +69,11 @@
 		9D9FCDBE25D7491000E552BA /* YYModelBaseUseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYModelBaseUseVC.m; sourceTree = "<group>"; };
 		9D9FCDCC25D7519B00E552BA /* ModelPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelPerson.h; sourceTree = "<group>"; };
 		9D9FCDCD25D7519B00E552BA /* ModelPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelPerson.m; sourceTree = "<group>"; };
+		9D9FCDD325D7560700E552BA /* MasonryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryVC.h; sourceTree = "<group>"; };
+		9D9FCDD425D7560700E552BA /* MasonryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryVC.m; sourceTree = "<group>"; };
+		9DAAC40125D8BC5C00681606 /* readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
+		9DAAC40625D8C32300681606 /* MasonryPriorityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryPriorityVC.h; sourceTree = "<group>"; };
+		9DAAC40725D8C32300681606 /* MasonryPriorityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryPriorityVC.m; sourceTree = "<group>"; };
 		9DBB032525D49DE00080BEAD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9DBB032625D49EB00080BEAD /* FXW_Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXW_Define.h; sourceTree = "<group>"; };
 		9DBB032A25D4A3690080BEAD /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
@@ -136,6 +144,7 @@
 		9D0F7D6B25D3CD9A0028B615 = {
 			isa = PBXGroup;
 			children = (
+				9DAAC40125D8BC5C00681606 /* readme */,
 				9D0F7D7625D3CD9A0028B615 /* Morning */,
 				9D0F7D9225D3CD9B0028B615 /* MorningTests */,
 				9D0F7D9D25D3CD9B0028B615 /* MorningUITests */,
@@ -206,6 +215,17 @@
 			path = "YYModel的使用";
 			sourceTree = "<group>";
 		};
+		9D9FCDD225D755E900E552BA /* Masonry布局 */ = {
+			isa = PBXGroup;
+			children = (
+				9D9FCDD325D7560700E552BA /* MasonryVC.h */,
+				9D9FCDD425D7560700E552BA /* MasonryVC.m */,
+				9DAAC40625D8C32300681606 /* MasonryPriorityVC.h */,
+				9DAAC40725D8C32300681606 /* MasonryPriorityVC.m */,
+			);
+			path = "Masonry布局";
+			sourceTree = "<group>";
+		};
 		9DBB033325D4A36E0080BEAD /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +240,7 @@
 		9DBB033725D4A4300080BEAD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9D9FCDD225D755E900E552BA /* Masonry布局 */,
 				9D9FCDBC25D748E000E552BA /* YYModel的使用 */,
 				9DBB033825D4A4420080BEAD /* 国际化 */,
 				9D0F7DCF25D3CFC20028B615 /* ContentsViewController.h */,
@@ -360,6 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DAAC40225D8BC5C00681606 /* readme in Resources */,
 				9DBB036925D4AA5D0080BEAD /* Localizable.strings in Resources */,
 				9D0F7D8725D3CD9B0028B615 /* LaunchScreen.storyboard in Resources */,
 				9DBB035F25D4A9680080BEAD /* InfoPlist.strings in Resources */,
@@ -416,8 +438,10 @@
 			files = (
 				9DBB033B25D4A46F0080BEAD /* InternationalizationVC.m in Sources */,
 				9DBB037625D4AC1C0080BEAD /* FXW_Button.m in Sources */,
+				9DAAC40825D8C32300681606 /* MasonryPriorityVC.m in Sources */,
 				9D0F7DD125D3CFC20028B615 /* ContentsViewController.m in Sources */,
 				9DBB037D25D4AE2F0080BEAD /* FXW_Tools.m in Sources */,
+				9D9FCDD525D7560700E552BA /* MasonryVC.m in Sources */,
 				9D9FCDCE25D7519B00E552BA /* ModelPerson.m in Sources */,
 				9D0F7D7925D3CD9A0028B615 /* AppDelegate.m in Sources */,
 				9D0F7D8A25D3CD9B0028B615 /* main.m in Sources */,
