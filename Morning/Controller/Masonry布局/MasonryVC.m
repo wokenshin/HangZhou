@@ -83,7 +83,7 @@
     UILabel *labC = [[UILabel alloc] init];
     labC.textColor = [UIColor brownColor];
     labC.backgroundColor = [UIColor whiteColor];
-    labC.text = @"Masonry使用注意事项用mas_makeConstraints的那个view需要在addSubview之后才能用这个方法mas_equalTo适用数值元素，equalTo适合多属性的比如make.left.and.right.equalTo(self.view)方法and和with只是为了可读性，返回自身，比如make.left.and.right.equalTo(self.view)和make.left.right.equalTo(self.view)是一样的。因为iOS中原点在左上角所以注意使用offset时注意right和bottom用负数。";
+    labC.text = @"Masonry使用注意事项用mas_makeConstraints的那个view需要在addSubview之后才能用这个方法mas_equalTo适用数值元素，equalTo适合多属性的比,如make.left.and.right.equalTo(self.view)方法and和with只是为了可读性，返回自身，比如make.left.and.right.equalTo(self.view)和make.left.right.equalTo(self.view)是一样的。因为iOS中原点在左上角所以注意使用offset时注意right和bottom用负数。";
     labC.numberOfLines = 0;//设置为0 文本将会自动换行
     labC.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:labC];

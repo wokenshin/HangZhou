@@ -6,7 +6,7 @@
 //
 
 #import "MasonryPriorityVC.h"
-//参考：https://www.cnblogs.com/siasyl/p/6775055.html
+//参考：http://www.jianshu.com/p/b0e1797036fe
 @interface MasonryPriorityVC ()
 @property (nonatomic, strong) FXW_Button *btnRemoveCenterView;
 @property (nonatomic, strong) FXW_Button *btnRemoveLeftView;
@@ -73,6 +73,7 @@
     [_btnRemoveCenterView setTitle:@"删除centerView" forState:UIControlStateNormal];
     [_btnRemoveCenterView setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_btnRemoveCenterView clickButtonWithResultBlock:^(FXW_Button *button) {
+// 这里有个知识点:用约束布局实现动画，布局代码写在外面，然后调用强制布局方法写在UIView动画里面
         [ws.viewCenter removeFromSuperview];
         //动画效果
         [UIView animateWithDuration:0.5 animations:^{

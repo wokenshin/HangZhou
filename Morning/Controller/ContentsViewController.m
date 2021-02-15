@@ -9,6 +9,10 @@
 #import "InternationalizationVC.h"
 #import "YYModelBaseUseVC.h"
 #import "MasonryVC.h"
+#import "RACVC.h"
+
+
+
 
 @interface ContentsViewController ()
 
@@ -28,12 +32,18 @@
 
 - (void)loadData{
     //这里用时间的降序排列
+    [self baseTableVC_addDataWithTitle:@"RAC的简单使用" andDetail:@"2021.2.15"];
     [self baseTableVC_addDataWithTitle:@"Masonry的简单使用" andDetail:@"2021.2.13"];
     [self baseTableVC_addDataWithTitle:@"YYModel的简单使用" andDetail:@"2021.2.13"];
     [self baseTableVC_addDataWithTitle:@"国际化" andDetail:@"2021.2.11"];
 }
 
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{
+    if ([title isEqualToString:@"RAC的简单使用"]) {
+        RACVC *vc = [[RACVC alloc] init];
+        [self base_pushVC:vc];
+        return;
+    }
     if ([title isEqualToString:@"Masonry的简单使用"]) {
         MasonryVC *vc = [[MasonryVC alloc] init];
         [self base_pushVC:vc];

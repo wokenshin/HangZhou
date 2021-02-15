@@ -4,4 +4,6 @@ target 'Morning' do
 
 pod 'Masonry'
 pod 'YYModel'
+pod 'ReactiveObjC'
+pod 'MLeaksFinder'
 end

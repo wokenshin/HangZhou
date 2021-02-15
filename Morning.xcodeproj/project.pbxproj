@@ -28,6 +28,7 @@
 		9DBB036925D4AA5D0080BEAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DBB036B25D4AA5D0080BEAD /* Localizable.strings */; };
 		9DBB037625D4AC1C0080BEAD /* FXW_Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB037525D4AC1C0080BEAD /* FXW_Button.m */; };
 		9DBB037D25D4AE2F0080BEAD /* FXW_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB037C25D4AE2F0080BEAD /* FXW_Tools.m */; };
+		9DC0C46D25D9D8EF00D9B5E6 /* RACVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC0C46C25D9D8EF00D9B5E6 /* RACVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		9DBB037525D4AC1C0080BEAD /* FXW_Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXW_Button.m; sourceTree = "<group>"; };
 		9DBB037B25D4AE2F0080BEAD /* FXW_Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXW_Tools.h; sourceTree = "<group>"; };
 		9DBB037C25D4AE2F0080BEAD /* FXW_Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXW_Tools.m; sourceTree = "<group>"; };
+		9DC0C46B25D9D8EF00D9B5E6 /* RACVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACVC.h; sourceTree = "<group>"; };
+		9DC0C46C25D9D8EF00D9B5E6 /* RACVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACVC.m; sourceTree = "<group>"; };
 		C1A24373BE124F7DB78594AB /* libPods-Morning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Morning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F091AB409D74B0E5AA222E9D /* Pods-Morning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning.release.xcconfig"; path = "Target Support Files/Pods-Morning/Pods-Morning.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,6 +243,7 @@
 		9DBB033725D4A4300080BEAD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9DC0C46A25D9D8D600D9B5E6 /* RAC的简单使用 */,
 				9D9FCDD225D755E900E552BA /* Masonry布局 */,
 				9D9FCDBC25D748E000E552BA /* YYModel的使用 */,
 				9DBB033825D4A4420080BEAD /* 国际化 */,
@@ -274,6 +278,15 @@
 				9DBB037C25D4AE2F0080BEAD /* FXW_Tools.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		9DC0C46A25D9D8D600D9B5E6 /* RAC的简单使用 */ = {
+			isa = PBXGroup;
+			children = (
+				9DC0C46B25D9D8EF00D9B5E6 /* RACVC.h */,
+				9DC0C46C25D9D8EF00D9B5E6 /* RACVC.m */,
+			);
+			path = "RAC的简单使用";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +455,7 @@
 				9D0F7DD125D3CFC20028B615 /* ContentsViewController.m in Sources */,
 				9DBB037D25D4AE2F0080BEAD /* FXW_Tools.m in Sources */,
 				9D9FCDD525D7560700E552BA /* MasonryVC.m in Sources */,
+				9DC0C46D25D9D8EF00D9B5E6 /* RACVC.m in Sources */,
 				9D9FCDCE25D7519B00E552BA /* ModelPerson.m in Sources */,
 				9D0F7D7925D3CD9A0028B615 /* AppDelegate.m in Sources */,
 				9D0F7D8A25D3CD9B0028B615 /* main.m in Sources */,
