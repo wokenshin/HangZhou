@@ -32,7 +32,7 @@
 
 - (void)loadData{
     //这里用时间的降序排列
-    [self baseTableVC_addDataWithTitle:@"RAC的简单使用" andDetail:@"2021.2.15"];
+    [self baseTableVC_addDataWithTitle:@"RAC的简单使用" andDetail:@"2021.2.15,函数式响应式编程"];
     [self baseTableVC_addDataWithTitle:@"Masonry的简单使用" andDetail:@"2021.2.13"];
     [self baseTableVC_addDataWithTitle:@"YYModel的简单使用" andDetail:@"2021.2.13"];
     [self baseTableVC_addDataWithTitle:@"国际化" andDetail:@"2021.2.11"];

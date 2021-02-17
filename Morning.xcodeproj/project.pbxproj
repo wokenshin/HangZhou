@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		316A717FDD06D441F7274487 /* libPods-Morning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A24373BE124F7DB78594AB /* libPods-Morning.a */; };
+		49EA039D25DCB4D0004E8FA3 /* RACTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EA039C25DCB4D0004E8FA3 /* RACTwoVC.m */; };
 		9D0F7D7925D3CD9A0028B615 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F7D7825D3CD9A0028B615 /* AppDelegate.m */; };
 		9D0F7D8225D3CD9A0028B615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F7D8025D3CD9A0028B615 /* Main.storyboard */; };
 		9D0F7D8425D3CD9B0028B615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F7D8325D3CD9B0028B615 /* Assets.xcassets */; };
@@ -50,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		36C1AC5EB925CC45D0AB5BF9 /* Pods-Morning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning.debug.xcconfig"; path = "Target Support Files/Pods-Morning/Pods-Morning.debug.xcconfig"; sourceTree = "<group>"; };
+		49EA039B25DCB4D0004E8FA3 /* RACTwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACTwoVC.h; sourceTree = "<group>"; };
+		49EA039C25DCB4D0004E8FA3 /* RACTwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTwoVC.m; sourceTree = "<group>"; };
 		9D0F7D7425D3CD9A0028B615 /* Morning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0F7D7725D3CD9A0028B615 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D0F7D7825D3CD9A0028B615 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 			children = (
 				9DC0C46B25D9D8EF00D9B5E6 /* RACVC.h */,
 				9DC0C46C25D9D8EF00D9B5E6 /* RACVC.m */,
+				49EA039B25DCB4D0004E8FA3 /* RACTwoVC.h */,
+				49EA039C25DCB4D0004E8FA3 /* RACTwoVC.m */,
 			);
 			path = "RAC的简单使用";
 			sourceTree = "<group>";
@@ -451,6 +456,7 @@
 			files = (
 				9DBB033B25D4A46F0080BEAD /* InternationalizationVC.m in Sources */,
 				9DBB037625D4AC1C0080BEAD /* FXW_Button.m in Sources */,
+				49EA039D25DCB4D0004E8FA3 /* RACTwoVC.m in Sources */,
 				9DAAC40825D8C32300681606 /* MasonryPriorityVC.m in Sources */,
 				9D0F7DD125D3CFC20028B615 /* ContentsViewController.m in Sources */,
 				9DBB037D25D4AE2F0080BEAD /* FXW_Tools.m in Sources */,

@@ -29,6 +29,7 @@
 #define FXWLog(...)
 #endif
 
+//@weakify和@strongify语句是在Extended Objective-C库中定义的宏，它们也包含在ReactiveCocoa中
 #ifndef weakify
     #if DEBUG
         #if __has_feature(objc_arc)

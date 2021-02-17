@@ -6,12 +6,15 @@
 //
 
 #import "RACVC.h"
+#import "RACTwoVC.h"
+
 #import "RACSignal.h"
 #import "RACSubscriber.h"
 #import "UITextField+RACSignalSupport.h"
 #import "UIControl+RACSignalSupport.h"
 #import "NSNotificationCenter+RACSupport.h"
 #import "RACSubscriptingAssignmentTrampoline.h"
+#import "RACSignal+Operations.h"
 /*
  2021.2.8.pm
  RAC+MVVM
@@ -47,10 +50,12 @@
 //本demo引入的RAC库为：ReactiveObjC，参考：https://www.jianshu.com/p/eb80e3803970
 @interface RACVC ()
 @property (nonatomic, strong)UITextField *text;
-@property (nonatomic, strong)UIButton *btn;
+@property (nonatomic, strong)UIButton    *btn;
 
 @property (nonatomic, strong)UITextField *userNameText;
 @property (nonatomic, strong)UITextField *passwordText;
+@property (nonatomic, strong)UIButton    *loginBtn;
+@property (nonatomic, strong)UIButton    *nextBtn;
 @end
 
 @implementation RACVC
@@ -65,23 +70,13 @@
 
 - (void)setRACVCUI{
     WS(ws);
-    CGFloat lineMargin = 10;
-    UILabel *labLine = [self labWithTitle:@"next"];
-    [self.view addSubview:labLine];
-    [labLine mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(ws.mas_topLayoutGuide).offset(10);
-        make.left.mas_equalTo(lineMargin);
-        make.right.mas_equalTo(-lineMargin);
-        make.height.mas_equalTo(lineMargin);
-    }];
-    
     _text = [[UITextField alloc] init];
-    _text.placeholder = @"username";
+    _text.placeholder = @"简单的测试文本框";
     _text.textColor = [UIColor redColor];
     _text.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:_text];
     [_text mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(labLine.mas_bottom).offset(10);
+        make.top.equalTo(ws.mas_topLayoutGuide).offset(10);
         make.centerX.mas_equalTo(0);
         make.size.mas_equalTo(CGSizeMake(200, 36));
     }];
@@ -98,21 +93,12 @@
         make.size.mas_equalTo(CGSizeMake(200, 36));
     }];
     
-    UILabel *lineTwo = [self labWithTitle:@"error"];
-    [self.view addSubview:lineTwo];
-    [lineTwo mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(ws.btn.mas_bottom).offset(10);
-        make.left.mas_equalTo(lineMargin);
-        make.right.mas_equalTo(-lineMargin);
-        make.height.mas_equalTo(lineMargin);
-    }];
-    
     _userNameText = [[UITextField alloc] init];
     _userNameText.placeholder = @"请输入手机号码";
     _userNameText.clearButtonMode = UITextFieldViewModeAlways;
     [self.view addSubview:_userNameText];
     [_userNameText mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(lineTwo.mas_bottom).offset(10);
+        make.top.mas_equalTo(ws.btn.mas_bottom).offset(10);
         make.left.mas_equalTo(10);
         make.right.mas_equalTo(-10);
         make.height.mas_equalTo(30);
@@ -128,17 +114,39 @@
         make.right.mas_equalTo(-10);
         make.height.mas_equalTo(30);
     }];
-
-}
-
-//返回一个分割线风格的标签
-- (UILabel *)labWithTitle:(NSString *)title{
-    UILabel *lab = [[UILabel alloc] init];
-    lab.backgroundColor = [UIColor grayColor];
-    lab.text = [NSString stringWithFormat:@"----------%@----------", title];
-    lab.textColor = [UIColor greenColor];
-    lab.textAlignment = NSTextAlignmentCenter;
-    return lab;
+    
+    _loginBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    _loginBtn.backgroundColor = [UIColor darkGrayColor];
+    [_loginBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [_loginBtn setTitle:@"登陆" forState:UIControlStateNormal];
+    [self.view addSubview:_loginBtn];
+    [_loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(ws.passwordText.mas_bottom).offset(10);
+        make.centerX.mas_equalTo(0);
+        make.size.mas_equalTo(CGSizeMake(180, 36));
+    }];
+    
+    UILabel *tipsLab = [[UILabel alloc] init];
+    tipsLab.text = @"只有当输入合法的用户名和密码时，登陆按钮点击才可用";
+    tipsLab.textColor = [UIColor redColor];
+    tipsLab.font = [UIFont systemFontOfSize:14];
+    [self.view addSubview:tipsLab];
+    [tipsLab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(ws.loginBtn.mas_bottom).offset(10);
+        make.left.mas_equalTo(10);
+        make.height.mas_equalTo(20);
+    }];
+    
+    _nextBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    _nextBtn.backgroundColor = [UIColor grayColor];
+    [_nextBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [_nextBtn setTitle:@"下一页" forState:UIControlStateNormal];
+    [self.view addSubview:_nextBtn];
+    [_nextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(tipsLab.mas_bottom).offset(10);
+        make.centerX.mas_equalTo(0);
+        make.size.mas_equalTo(CGSizeMake(180, 36));
+    }];
 }
 
 //RAC相关的代码
@@ -147,7 +155,6 @@
     [[_btn rac_signalForControlEvents:(UIControlEventTouchUpInside)] subscribeNext:^(__kindof UIControl * _Nullable x) {
         NSLog(@"卧槽！瞬间觉得自己写的block回调按钮不香了...");
     }];
-    
     //@weakify(self)：为了打断循环引用！！
     //@strongify(self)：为了防止self被释放后，队列无法调用block！！
     //其实这里的block内存泄漏问题和block的变量截获有关，慕课网里的相关资料说得很清楚
@@ -208,6 +215,25 @@
         return [value boolValue] ? UIColor.clearColor : UIColor.yellowColor;
     }];
     
+    //组合信号 在用户名和密码都无效的情况下 登陆按钮是无效的，都有效时，登陆按钮才可以点击
+    RACSignal *signUpActiveSignal = [RACSignal combineLatest:@[validUsernameSignal, validPasswordSignal] reduce:^id (NSNumber *usernameValid, NSNumber *passwordValid){
+        //每当这两个信号的其中任何一个发出新值时，reduce块都会被执行，它返回的值将作为组合信号的下一个值发送。
+        return @([usernameValid boolValue]&&[passwordValid boolValue]);
+    }];
+    //RACSignal组合方法可以结合任何数量的信号，并且在reduce块的参数分别对应每个信号传递的值
+    //现在，我们使用这个全新的信号添加内容，将其绑定到按钮上的enable属性：
+    RAC(self.loginBtn, enabled) = signUpActiveSignal;
+    
+    //设置登录按钮处理点击事件
+    [[_loginBtn rac_signalForControlEvents:(UIControlEventTouchUpInside)] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        NSLog(@"登录中...");
+    }];
+    
+    [[_nextBtn rac_signalForControlEvents:(UIControlEventTouchUpInside)] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        RACTwoVC *vc = [[RACTwoVC alloc] init];
+        @strongify(self);
+        [self base_pushVC:vc];
+    }];
 }
 
 //验证用户名是否为手机号码
