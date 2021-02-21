@@ -48,6 +48,8 @@
 //2021.2.15
 //demo 使用层面上 参考：https://blog.csdn.net/LOLITA0164/article/details/101052997
 //本demo引入的RAC库为：ReactiveObjC，参考：https://www.jianshu.com/p/eb80e3803970
+//RAC总结笔记：https://juejin.cn/post/6869659262885298190【内容不错,其实这里的笔记就是对本demo的总结】
+//本demo的最终原文[英文版]：https://www.raywenderlich.com/2493-reactivecocoa-tutorial-the-definitive-introduction-part-1-2
 @interface RACVC ()
 @property (nonatomic, strong)UITextField *text;
 @property (nonatomic, strong)UIButton    *btn;
