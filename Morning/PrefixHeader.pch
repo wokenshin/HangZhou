@@ -32,7 +32,9 @@
 
 //第三方
 #import "Masonry.h"
-#import "YYModel.h"
+#import <YYModel/YYModel.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+
 
 #endif  //和 #ifdef __OBJC__ 对应
 
