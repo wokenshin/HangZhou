@@ -1,3 +1,11 @@
+iTerm2隐藏终端用户名和计算机名
+我用的是 oh my zsh主题，打开主题文件目录
+第一步：cd ~/.oh-my-zsh/themes
+第二步：修改自己所使用的那个主题最后的内容，将prompt_context注释掉
+第三步：source ~/.zshrc
+以上from：https://www.cnblogs.com/iPing9/p/13298090.html
+
+
 暗黑模式：https://blog.csdn.net/LOLITA0164/article/details/105794708?spm=1001.2014.3001.5501
 RAC的两篇文章：https://blog.csdn.net/LOLITA0164/article/details/101052997?spm=1001.2014.3001.5501【基础篇】
              https://blog.csdn.net/LOLITA0164/article/details/101053158?spm=1001.2014.3001.5501【进阶】
