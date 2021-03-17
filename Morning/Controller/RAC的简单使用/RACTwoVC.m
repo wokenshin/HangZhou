@@ -187,6 +187,99 @@
     
 }
 
+//RACSignal的基本使用
+- (void)RACSignalBaseFunc{
+    //【获得一个信号的方式】
 
+    //单元信号
+    RACSignal *signal1 = [RACSignal return:@"some value"];
+    RACSignal *signal2 = [RACSignal error:[NSError new]];
+    RACSignal *signal3 = [RACSignal empty];
+    RACSignal *signal4 = [RACSignal never];
+    
+    //动态信号
+    RACSignal *signal5 = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:@1];
+        [subscriber sendNext:@2];
+        [subscriber sendError:[NSError new]];
+        [subscriber sendCompleted];//当执行到sendError之后 下面的就不会执行了
+        return [RACDisposable disposableWithBlock:^{
+            
+        }];
+    }];
+    
+    //桥接方式
+    RACSignal *signal6 = [self.view rac_signalForSelector:@selector(setFrame:)];
+    RACSignal *signal7 = [self.racBtn rac_signalForControlEvents:(UIControlEventTouchUpInside)];
+    RACSignal *signal8 = [self.view rac_willDeallocSignal];
+    RACSignal *signal9 = RACObserve(self.view, backgroundColor);
+    
+    //信号变换
+    RACSignal *signal10 = [signal1 map:^id (NSString   *value) {
+        return [value substringToIndex:1];;
+    }];
+    
+    //序列转换【用的较少】
+    //RACSignal *signal11 = sequence.signal;
+    
+    //【订阅一个信号的方式】
+    //订阅方法
+    [signal1 subscribeNext:^(id  _Nullable x) {
+            
+    }];
+    
+    [signal2 subscribeNext:^(id  _Nullable x) {
+        
+    } error:^(NSError * _Nullable error) {
+        
+    }];
+    
+    [signal3 subscribeNext:^(id  _Nullable x) {
+        
+    } error:^(NSError * _Nullable error) {
+        
+    } completed:^{
+        
+    }];
+    //绑定(也属于桥接)
+    RAC(self.view, backgroundColor) = signal10;
+    
+    //Cocoa桥接
+    //下面代码的意思是当出现信号1和2之后会调用setFrame这个方法
+    [self.view rac_liftSelector:@selector(myFuncSingalOne:withSignalTwo:) withSignals:signal1, signal2, nil];
+    [self.view rac_liftSelector:@selector(myFuncSingalOne:withSignalTwo:) withSignalsFromArray:@[signal3, signal4]];
+    [self.view rac_liftSelector:@selector(myFuncSingalOne:withSignalTwo:) withSignalOfArguments:signal5];
+    
+}
+
+- (void)yFuncSingalOne:(RACSignal *)signal1 withSignalTwo:(RACSignal *)signal2{
+    
+}
+
+- (void)someCodes{
+    //【订阅过程】十分重要
+    
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:@1];
+        [subscriber sendNext:@2];
+        [subscriber sendCompleted];//当执行到sendError之后 下面的就不会执行了
+        return [RACDisposable disposableWithBlock:^{
+            NSLog(@"dispose");
+        }];
+    }];
+    
+    RACDisposable *disposable = [signal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"next value is %@", x);
+    } error:^(NSError * _Nullable error) {
+        NSLog(@"get some error:%@", error);
+    } completed:^{
+        NSLog(@"finished success");
+    }];
+    
+    [disposable dispose];
+    
+    //元祖————RACTuple
+    //元祖RACTuple 是RAC定义的一种数据类型，是NSArray的简化版，
+}
 
 @end

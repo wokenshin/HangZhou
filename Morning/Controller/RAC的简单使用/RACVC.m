@@ -220,7 +220,7 @@
     RAC(self.loginBtn, enabled) = signUpActiveSignal;
     
     //设置登录按钮处理点击事件
-    [[_loginBtn rac_signalForControlEvents:(UIControlEventTouchUpInside)] subscribeNext:^(__kindof UIControl * _Nullable x) {
+    [[_loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         NSLog(@"登录中...");
     }];
     
