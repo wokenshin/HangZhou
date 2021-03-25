@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		316A717FDD06D441F7274487 /* libPods-Morning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A24373BE124F7DB78594AB /* libPods-Morning.a */; };
+		49DF70C42607824400904B2C /* DelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DF70C32607824400904B2C /* DelVC.m */; };
+		49DF70CE260782BD00904B2C /* DelObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DF70CD260782BD00904B2C /* DelObj.m */; };
 		49EA039D25DCB4D0004E8FA3 /* RACTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EA039C25DCB4D0004E8FA3 /* RACTwoVC.m */; };
 		9D0F7D7925D3CD9A0028B615 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F7D7825D3CD9A0028B615 /* AppDelegate.m */; };
 		9D0F7D8225D3CD9A0028B615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F7D8025D3CD9A0028B615 /* Main.storyboard */; };
@@ -51,6 +53,11 @@
 
 /* Begin PBXFileReference section */
 		36C1AC5EB925CC45D0AB5BF9 /* Pods-Morning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning.debug.xcconfig"; path = "Target Support Files/Pods-Morning/Pods-Morning.debug.xcconfig"; sourceTree = "<group>"; };
+		49DF70C22607824400904B2C /* DelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelVC.h; sourceTree = "<group>"; };
+		49DF70C32607824400904B2C /* DelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelVC.m; sourceTree = "<group>"; };
+		49DF70CB2607826800904B2C /* FXWDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXWDelegate.h; sourceTree = "<group>"; };
+		49DF70CC260782BD00904B2C /* DelObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelObj.h; sourceTree = "<group>"; };
+		49DF70CD260782BD00904B2C /* DelObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelObj.m; sourceTree = "<group>"; };
 		49EA039B25DCB4D0004E8FA3 /* RACTwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACTwoVC.h; sourceTree = "<group>"; };
 		49EA039C25DCB4D0004E8FA3 /* RACTwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTwoVC.m; sourceTree = "<group>"; };
 		9D0F7D7425D3CD9A0028B615 /* Morning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +144,18 @@
 				F091AB409D74B0E5AA222E9D /* Pods-Morning.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		49DF70C12607822D00904B2C /* 代理 */ = {
+			isa = PBXGroup;
+			children = (
+				49DF70C22607824400904B2C /* DelVC.h */,
+				49DF70C32607824400904B2C /* DelVC.m */,
+				49DF70CB2607826800904B2C /* FXWDelegate.h */,
+				49DF70CC260782BD00904B2C /* DelObj.h */,
+				49DF70CD260782BD00904B2C /* DelObj.m */,
+			);
+			path = "代理";
 			sourceTree = "<group>";
 		};
 		50F42788FAE63F5252AF8493 /* Frameworks */ = {
@@ -246,6 +265,7 @@
 		9DBB033725D4A4300080BEAD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				49DF70C12607822D00904B2C /* 代理 */,
 				9DC0C46A25D9D8D600D9B5E6 /* RAC的简单使用 */,
 				9D9FCDD225D755E900E552BA /* Masonry布局 */,
 				9D9FCDBC25D748E000E552BA /* YYModel的使用 */,
@@ -457,9 +477,11 @@
 				9DBB033B25D4A46F0080BEAD /* InternationalizationVC.m in Sources */,
 				9DBB037625D4AC1C0080BEAD /* FXW_Button.m in Sources */,
 				49EA039D25DCB4D0004E8FA3 /* RACTwoVC.m in Sources */,
+				49DF70CE260782BD00904B2C /* DelObj.m in Sources */,
 				9DAAC40825D8C32300681606 /* MasonryPriorityVC.m in Sources */,
 				9D0F7DD125D3CFC20028B615 /* ContentsViewController.m in Sources */,
 				9DBB037D25D4AE2F0080BEAD /* FXW_Tools.m in Sources */,
+				49DF70C42607824400904B2C /* DelVC.m in Sources */,
 				9D9FCDD525D7560700E552BA /* MasonryVC.m in Sources */,
 				9DC0C46D25D9D8EF00D9B5E6 /* RACVC.m in Sources */,
 				9D9FCDCE25D7519B00E552BA /* ModelPerson.m in Sources */,

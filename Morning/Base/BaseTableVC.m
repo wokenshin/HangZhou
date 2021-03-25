@@ -17,8 +17,6 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
-    
 }
 
 
@@ -80,8 +78,6 @@
         }];
     }
     [_tableView reloadData];
-    
-    
 }
 
 - (void)baseTableVC_addDataWithTitle:(NSString *)title andDetail:(NSString *)detail{
@@ -89,7 +85,6 @@
     [mDic setObject:title  forKey:@"title"];
     [mDic setObject:detail forKey:@"detail"];
     [self.mArrData addObject:mDic];
-    
 }
 
 - (NSMutableArray *)mArrData{
