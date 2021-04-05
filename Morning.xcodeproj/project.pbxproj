@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		316A717FDD06D441F7274487 /* libPods-Morning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A24373BE124F7DB78594AB /* libPods-Morning.a */; };
+		4965CA86261BC29A0008F531 /* MultipleInheritVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4965CA85261BC29A0008F531 /* MultipleInheritVC.m */; };
+		4965CA8D261BC4680008F531 /* FXWCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4965CA8C261BC4680008F531 /* FXWCalculator.m */; };
 		49DF70C42607824400904B2C /* DelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DF70C32607824400904B2C /* DelVC.m */; };
 		49DF70CE260782BD00904B2C /* DelObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DF70CD260782BD00904B2C /* DelObj.m */; };
 		49EA039D25DCB4D0004E8FA3 /* RACTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EA039C25DCB4D0004E8FA3 /* RACTwoVC.m */; };
@@ -53,6 +55,11 @@
 
 /* Begin PBXFileReference section */
 		36C1AC5EB925CC45D0AB5BF9 /* Pods-Morning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning.debug.xcconfig"; path = "Target Support Files/Pods-Morning/Pods-Morning.debug.xcconfig"; sourceTree = "<group>"; };
+		4965CA84261BC29A0008F531 /* MultipleInheritVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleInheritVC.h; sourceTree = "<group>"; };
+		4965CA85261BC29A0008F531 /* MultipleInheritVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleInheritVC.m; sourceTree = "<group>"; };
+		4965CA8A261BC2E10008F531 /* CalculatorOperator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorOperator.h; sourceTree = "<group>"; };
+		4965CA8B261BC4680008F531 /* FXWCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXWCalculator.h; sourceTree = "<group>"; };
+		4965CA8C261BC4680008F531 /* FXWCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXWCalculator.m; sourceTree = "<group>"; };
 		49DF70C22607824400904B2C /* DelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelVC.h; sourceTree = "<group>"; };
 		49DF70C32607824400904B2C /* DelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelVC.m; sourceTree = "<group>"; };
 		49DF70CB2607826800904B2C /* FXWDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXWDelegate.h; sourceTree = "<group>"; };
@@ -144,6 +151,18 @@
 				F091AB409D74B0E5AA222E9D /* Pods-Morning.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4965CA83261BC2260008F531 /* 多继承 */ = {
+			isa = PBXGroup;
+			children = (
+				4965CA84261BC29A0008F531 /* MultipleInheritVC.h */,
+				4965CA85261BC29A0008F531 /* MultipleInheritVC.m */,
+				4965CA8B261BC4680008F531 /* FXWCalculator.h */,
+				4965CA8C261BC4680008F531 /* FXWCalculator.m */,
+				4965CA8A261BC2E10008F531 /* CalculatorOperator.h */,
+			);
+			path = "多继承";
 			sourceTree = "<group>";
 		};
 		49DF70C12607822D00904B2C /* 代理 */ = {
@@ -265,6 +284,7 @@
 		9DBB033725D4A4300080BEAD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4965CA83261BC2260008F531 /* 多继承 */,
 				49DF70C12607822D00904B2C /* 代理 */,
 				9DC0C46A25D9D8D600D9B5E6 /* RAC的简单使用 */,
 				9D9FCDD225D755E900E552BA /* Masonry布局 */,
@@ -479,6 +499,7 @@
 				49EA039D25DCB4D0004E8FA3 /* RACTwoVC.m in Sources */,
 				49DF70CE260782BD00904B2C /* DelObj.m in Sources */,
 				9DAAC40825D8C32300681606 /* MasonryPriorityVC.m in Sources */,
+				4965CA8D261BC4680008F531 /* FXWCalculator.m in Sources */,
 				9D0F7DD125D3CFC20028B615 /* ContentsViewController.m in Sources */,
 				9DBB037D25D4AE2F0080BEAD /* FXW_Tools.m in Sources */,
 				49DF70C42607824400904B2C /* DelVC.m in Sources */,
@@ -488,6 +509,7 @@
 				9D0F7D7925D3CD9A0028B615 /* AppDelegate.m in Sources */,
 				9D0F7D8A25D3CD9B0028B615 /* main.m in Sources */,
 				9DBB032F25D4A3690080BEAD /* BaseTableVC.m in Sources */,
+				4965CA86261BC29A0008F531 /* MultipleInheritVC.m in Sources */,
 				9D9FCDBF25D7491000E552BA /* YYModelBaseUseVC.m in Sources */,
 				9DBB032E25D4A3690080BEAD /* BaseVC.m in Sources */,
 			);

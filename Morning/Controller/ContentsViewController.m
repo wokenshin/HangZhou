@@ -11,7 +11,7 @@
 #import "MasonryVC.h"
 #import "RACVC.h"
 #import "DelVC.h"
-
+#import "MultipleInheritVC.h"
 
 
 @interface ContentsViewController ()
@@ -32,6 +32,7 @@
 
 - (void)loadData{
     //这里用时间的降序排列
+    [self baseTableVC_addDataWithTitle:@"多继承" andDetail:@"2021.4.6"];
     [self baseTableVC_addDataWithTitle:@"代理" andDetail:@"2021.3.25"];
     [self baseTableVC_addDataWithTitle:@"RAC的简单使用" andDetail:@"2021.2.15,函数式响应式编程"];
     [self baseTableVC_addDataWithTitle:@"Masonry的简单使用" andDetail:@"2021.2.13"];
@@ -40,6 +41,11 @@
 }
 
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{
+    if ([title isEqualToString:@"多继承"]) {
+        MultipleInheritVC *vc = [[MultipleInheritVC alloc] init];
+        [self base_pushVC:vc];
+        return;
+    }
     if ([title isEqualToString:@"代理"]) {
         DelVC *vc = [[DelVC alloc] init];
         [self base_pushVC:vc];
