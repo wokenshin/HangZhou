@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ContentsViewController.h"
+#import "MainTabBarVC.h"
 
 @interface AppDelegate ()
 
@@ -23,17 +23,14 @@
  详细：https://juejin.cn/post/6844903982641446919
 */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     [self setRootVC];
     return YES;
 }
 
 - (void)setRootVC{
-    ContentsViewController *vc = [[ContentsViewController alloc] init];
-    UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:vc];
+    MainTabBarVC *vc = [[MainTabBarVC alloc] init];
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [_window setRootViewController:nv];
-    [_window setBackgroundColor:[UIColor whiteColor]];
+    [_window setRootViewController:vc];
     [_window makeKeyAndVisible];
 }
 

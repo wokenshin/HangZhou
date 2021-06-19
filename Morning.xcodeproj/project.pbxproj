@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		316A717FDD06D441F7274487 /* libPods-Morning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A24373BE124F7DB78594AB /* libPods-Morning.a */; };
-		4965CA86261BC29A0008F531 /* MultipleInheritVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4965CA85261BC29A0008F531 /* MultipleInheritVC.m */; };
-		4965CA8D261BC4680008F531 /* FXWCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4965CA8C261BC4680008F531 /* FXWCalculator.m */; };
-		49DF70C42607824400904B2C /* DelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DF70C32607824400904B2C /* DelVC.m */; };
-		49DF70CE260782BD00904B2C /* DelObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DF70CD260782BD00904B2C /* DelObj.m */; };
-		49EA039D25DCB4D0004E8FA3 /* RACTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EA039C25DCB4D0004E8FA3 /* RACTwoVC.m */; };
+		49DD3412265A0214006F66E5 /* MainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD33F0265A0214006F66E5 /* MainTabBarVC.m */; };
+		49DD3413265A0214006F66E5 /* InternationalizationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD33F4265A0214006F66E5 /* InternationalizationVC.m */; };
+		49DD3414265A0214006F66E5 /* ModelPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD33F6265A0214006F66E5 /* ModelPerson.m */; };
+		49DD3415265A0214006F66E5 /* YYModelBaseUseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD33F7265A0214006F66E5 /* YYModelBaseUseVC.m */; };
+		49DD3416265A0214006F66E5 /* MultipleInheritVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD33FD265A0214006F66E5 /* MultipleInheritVC.m */; };
+		49DD3417265A0214006F66E5 /* FXWCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD33FE265A0214006F66E5 /* FXWCalculator.m */; };
+		49DD3418265A0214006F66E5 /* MasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD3402265A0214006F66E5 /* MasonryVC.m */; };
+		49DD3419265A0214006F66E5 /* MasonryPriorityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD3403265A0214006F66E5 /* MasonryPriorityVC.m */; };
+		49DD341A265A0214006F66E5 /* DelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD3409265A0214006F66E5 /* DelVC.m */; };
+		49DD341B265A0214006F66E5 /* DelObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD340A265A0214006F66E5 /* DelObj.m */; };
+		49DD341C265A0214006F66E5 /* OneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD340C265A0214006F66E5 /* OneVC.m */; };
+		49DD341D265A0214006F66E5 /* RACVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD340F265A0214006F66E5 /* RACVC.m */; };
+		49DD341E265A0214006F66E5 /* RACTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD3410265A0214006F66E5 /* RACTwoVC.m */; };
+		49DD3427265A03C0006F66E5 /* TwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD3426265A03C0006F66E5 /* TwoVC.m */; };
+		49DD342D265A03EC006F66E5 /* ThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD342C265A03EC006F66E5 /* ThreeVC.m */; };
+		49DD3433265A03FD006F66E5 /* FourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DD3432265A03FD006F66E5 /* FourVC.m */; };
 		9D0F7D7925D3CD9A0028B615 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F7D7825D3CD9A0028B615 /* AppDelegate.m */; };
 		9D0F7D8225D3CD9A0028B615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F7D8025D3CD9A0028B615 /* Main.storyboard */; };
 		9D0F7D8425D3CD9B0028B615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F7D8325D3CD9B0028B615 /* Assets.xcassets */; };
@@ -20,20 +31,13 @@
 		9D0F7D8A25D3CD9B0028B615 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F7D8925D3CD9B0028B615 /* main.m */; };
 		9D0F7D9425D3CD9B0028B615 /* MorningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F7D9325D3CD9B0028B615 /* MorningTests.m */; };
 		9D0F7D9F25D3CD9B0028B615 /* MorningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F7D9E25D3CD9B0028B615 /* MorningUITests.m */; };
-		9D0F7DD125D3CFC20028B615 /* ContentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F7DD025D3CFC20028B615 /* ContentsViewController.m */; };
-		9D9FCDBF25D7491000E552BA /* YYModelBaseUseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FCDBE25D7491000E552BA /* YYModelBaseUseVC.m */; };
-		9D9FCDCE25D7519B00E552BA /* ModelPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FCDCD25D7519B00E552BA /* ModelPerson.m */; };
-		9D9FCDD525D7560700E552BA /* MasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9FCDD425D7560700E552BA /* MasonryVC.m */; };
 		9DAAC40225D8BC5C00681606 /* readme in Resources */ = {isa = PBXBuildFile; fileRef = 9DAAC40125D8BC5C00681606 /* readme */; };
-		9DAAC40825D8C32300681606 /* MasonryPriorityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAC40725D8C32300681606 /* MasonryPriorityVC.m */; };
 		9DBB032E25D4A3690080BEAD /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB032A25D4A3690080BEAD /* BaseVC.m */; };
 		9DBB032F25D4A3690080BEAD /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB032D25D4A3690080BEAD /* BaseTableVC.m */; };
-		9DBB033B25D4A46F0080BEAD /* InternationalizationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB033A25D4A46F0080BEAD /* InternationalizationVC.m */; };
 		9DBB035F25D4A9680080BEAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DBB036125D4A9680080BEAD /* InfoPlist.strings */; };
 		9DBB036925D4AA5D0080BEAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DBB036B25D4AA5D0080BEAD /* Localizable.strings */; };
 		9DBB037625D4AC1C0080BEAD /* FXW_Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB037525D4AC1C0080BEAD /* FXW_Button.m */; };
 		9DBB037D25D4AE2F0080BEAD /* FXW_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBB037C25D4AE2F0080BEAD /* FXW_Tools.m */; };
-		9DC0C46D25D9D8EF00D9B5E6 /* RACVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC0C46C25D9D8EF00D9B5E6 /* RACVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,18 +59,40 @@
 
 /* Begin PBXFileReference section */
 		36C1AC5EB925CC45D0AB5BF9 /* Pods-Morning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning.debug.xcconfig"; path = "Target Support Files/Pods-Morning/Pods-Morning.debug.xcconfig"; sourceTree = "<group>"; };
-		4965CA84261BC29A0008F531 /* MultipleInheritVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleInheritVC.h; sourceTree = "<group>"; };
-		4965CA85261BC29A0008F531 /* MultipleInheritVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleInheritVC.m; sourceTree = "<group>"; };
-		4965CA8A261BC2E10008F531 /* CalculatorOperator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorOperator.h; sourceTree = "<group>"; };
-		4965CA8B261BC4680008F531 /* FXWCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXWCalculator.h; sourceTree = "<group>"; };
-		4965CA8C261BC4680008F531 /* FXWCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXWCalculator.m; sourceTree = "<group>"; };
-		49DF70C22607824400904B2C /* DelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelVC.h; sourceTree = "<group>"; };
-		49DF70C32607824400904B2C /* DelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelVC.m; sourceTree = "<group>"; };
-		49DF70CB2607826800904B2C /* FXWDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXWDelegate.h; sourceTree = "<group>"; };
-		49DF70CC260782BD00904B2C /* DelObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelObj.h; sourceTree = "<group>"; };
-		49DF70CD260782BD00904B2C /* DelObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelObj.m; sourceTree = "<group>"; };
-		49EA039B25DCB4D0004E8FA3 /* RACTwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACTwoVC.h; sourceTree = "<group>"; };
-		49EA039C25DCB4D0004E8FA3 /* RACTwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTwoVC.m; sourceTree = "<group>"; };
+		49DD33EC265A0213006F66E5 /* MainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarVC.h; sourceTree = "<group>"; };
+		49DD33F0265A0214006F66E5 /* MainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarVC.m; sourceTree = "<group>"; };
+		49DD33F3265A0214006F66E5 /* InternationalizationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternationalizationVC.h; sourceTree = "<group>"; };
+		49DD33F4265A0214006F66E5 /* InternationalizationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternationalizationVC.m; sourceTree = "<group>"; };
+		49DD33F6265A0214006F66E5 /* ModelPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelPerson.m; sourceTree = "<group>"; };
+		49DD33F7265A0214006F66E5 /* YYModelBaseUseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYModelBaseUseVC.m; sourceTree = "<group>"; };
+		49DD33F8265A0214006F66E5 /* YYModelBaseUseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModelBaseUseVC.h; sourceTree = "<group>"; };
+		49DD33F9265A0214006F66E5 /* ModelPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelPerson.h; sourceTree = "<group>"; };
+		49DD33FB265A0214006F66E5 /* MultipleInheritVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleInheritVC.h; sourceTree = "<group>"; };
+		49DD33FC265A0214006F66E5 /* FXWCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXWCalculator.h; sourceTree = "<group>"; };
+		49DD33FD265A0214006F66E5 /* MultipleInheritVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleInheritVC.m; sourceTree = "<group>"; };
+		49DD33FE265A0214006F66E5 /* FXWCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXWCalculator.m; sourceTree = "<group>"; };
+		49DD33FF265A0214006F66E5 /* CalculatorOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorOperator.h; sourceTree = "<group>"; };
+		49DD3400265A0214006F66E5 /* OneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneVC.h; sourceTree = "<group>"; };
+		49DD3402265A0214006F66E5 /* MasonryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryVC.m; sourceTree = "<group>"; };
+		49DD3403265A0214006F66E5 /* MasonryPriorityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryPriorityVC.m; sourceTree = "<group>"; };
+		49DD3404265A0214006F66E5 /* MasonryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryVC.h; sourceTree = "<group>"; };
+		49DD3405265A0214006F66E5 /* MasonryPriorityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryPriorityVC.h; sourceTree = "<group>"; };
+		49DD3407265A0214006F66E5 /* DelObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelObj.h; sourceTree = "<group>"; };
+		49DD3408265A0214006F66E5 /* DelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelVC.h; sourceTree = "<group>"; };
+		49DD3409265A0214006F66E5 /* DelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelVC.m; sourceTree = "<group>"; };
+		49DD340A265A0214006F66E5 /* DelObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelObj.m; sourceTree = "<group>"; };
+		49DD340B265A0214006F66E5 /* FXWDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXWDelegate.h; sourceTree = "<group>"; };
+		49DD340C265A0214006F66E5 /* OneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneVC.m; sourceTree = "<group>"; };
+		49DD340E265A0214006F66E5 /* RACTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACTwoVC.h; sourceTree = "<group>"; };
+		49DD340F265A0214006F66E5 /* RACVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACVC.m; sourceTree = "<group>"; };
+		49DD3410265A0214006F66E5 /* RACTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACTwoVC.m; sourceTree = "<group>"; };
+		49DD3411265A0214006F66E5 /* RACVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACVC.h; sourceTree = "<group>"; };
+		49DD3425265A03C0006F66E5 /* TwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoVC.h; sourceTree = "<group>"; };
+		49DD3426265A03C0006F66E5 /* TwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoVC.m; sourceTree = "<group>"; };
+		49DD342B265A03EC006F66E5 /* ThreeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeVC.h; sourceTree = "<group>"; };
+		49DD342C265A03EC006F66E5 /* ThreeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeVC.m; sourceTree = "<group>"; };
+		49DD3431265A03FD006F66E5 /* FourVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourVC.h; sourceTree = "<group>"; };
+		49DD3432265A03FD006F66E5 /* FourVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourVC.m; sourceTree = "<group>"; };
 		9D0F7D7425D3CD9A0028B615 /* Morning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0F7D7725D3CD9A0028B615 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D0F7D7825D3CD9A0028B615 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,25 +107,13 @@
 		9D0F7D9A25D3CD9B0028B615 /* MorningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0F7D9E25D3CD9B0028B615 /* MorningUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MorningUITests.m; sourceTree = "<group>"; };
 		9D0F7DA025D3CD9B0028B615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D0F7DCF25D3CFC20028B615 /* ContentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentsViewController.h; sourceTree = "<group>"; };
-		9D0F7DD025D3CFC20028B615 /* ContentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentsViewController.m; sourceTree = "<group>"; };
-		9D9FCDBD25D7491000E552BA /* YYModelBaseUseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYModelBaseUseVC.h; sourceTree = "<group>"; };
-		9D9FCDBE25D7491000E552BA /* YYModelBaseUseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYModelBaseUseVC.m; sourceTree = "<group>"; };
-		9D9FCDCC25D7519B00E552BA /* ModelPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelPerson.h; sourceTree = "<group>"; };
-		9D9FCDCD25D7519B00E552BA /* ModelPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelPerson.m; sourceTree = "<group>"; };
-		9D9FCDD325D7560700E552BA /* MasonryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryVC.h; sourceTree = "<group>"; };
-		9D9FCDD425D7560700E552BA /* MasonryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryVC.m; sourceTree = "<group>"; };
 		9DAAC40125D8BC5C00681606 /* readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
-		9DAAC40625D8C32300681606 /* MasonryPriorityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryPriorityVC.h; sourceTree = "<group>"; };
-		9DAAC40725D8C32300681606 /* MasonryPriorityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryPriorityVC.m; sourceTree = "<group>"; };
 		9DBB032525D49DE00080BEAD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9DBB032625D49EB00080BEAD /* FXW_Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXW_Define.h; sourceTree = "<group>"; };
 		9DBB032A25D4A3690080BEAD /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		9DBB032B25D4A3690080BEAD /* BaseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableVC.h; sourceTree = "<group>"; };
 		9DBB032C25D4A3690080BEAD /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		9DBB032D25D4A3690080BEAD /* BaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
-		9DBB033925D4A46F0080BEAD /* InternationalizationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InternationalizationVC.h; sourceTree = "<group>"; };
-		9DBB033A25D4A46F0080BEAD /* InternationalizationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InternationalizationVC.m; sourceTree = "<group>"; };
 		9DBB035525D4A9390080BEAD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		9DBB035625D4A9390080BEAD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		9DBB035A25D4A94A0080BEAD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -112,8 +126,6 @@
 		9DBB037525D4AC1C0080BEAD /* FXW_Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXW_Button.m; sourceTree = "<group>"; };
 		9DBB037B25D4AE2F0080BEAD /* FXW_Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXW_Tools.h; sourceTree = "<group>"; };
 		9DBB037C25D4AE2F0080BEAD /* FXW_Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXW_Tools.m; sourceTree = "<group>"; };
-		9DC0C46B25D9D8EF00D9B5E6 /* RACVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACVC.h; sourceTree = "<group>"; };
-		9DC0C46C25D9D8EF00D9B5E6 /* RACVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACVC.m; sourceTree = "<group>"; };
 		C1A24373BE124F7DB78594AB /* libPods-Morning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Morning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F091AB409D74B0E5AA222E9D /* Pods-Morning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning.release.xcconfig"; path = "Target Support Files/Pods-Morning/Pods-Morning.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,28 +165,112 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		4965CA83261BC2260008F531 /* 多继承 */ = {
+		49DD33ED265A0213006F66E5 /* four */ = {
 			isa = PBXGroup;
 			children = (
-				4965CA84261BC29A0008F531 /* MultipleInheritVC.h */,
-				4965CA85261BC29A0008F531 /* MultipleInheritVC.m */,
-				4965CA8B261BC4680008F531 /* FXWCalculator.h */,
-				4965CA8C261BC4680008F531 /* FXWCalculator.m */,
-				4965CA8A261BC2E10008F531 /* CalculatorOperator.h */,
+				49DD3431265A03FD006F66E5 /* FourVC.h */,
+				49DD3432265A03FD006F66E5 /* FourVC.m */,
+			);
+			path = four;
+			sourceTree = "<group>";
+		};
+		49DD33EE265A0214006F66E5 /* two */ = {
+			isa = PBXGroup;
+			children = (
+				49DD33F5265A0214006F66E5 /* YYModel的使用 */,
+				49DD3401265A0214006F66E5 /* Masonry布局 */,
+				49DD340D265A0214006F66E5 /* RAC的简单使用 */,
+				49DD3425265A03C0006F66E5 /* TwoVC.h */,
+				49DD3426265A03C0006F66E5 /* TwoVC.m */,
+			);
+			path = two;
+			sourceTree = "<group>";
+		};
+		49DD33EF265A0214006F66E5 /* three */ = {
+			isa = PBXGroup;
+			children = (
+				49DD342B265A03EC006F66E5 /* ThreeVC.h */,
+				49DD342C265A03EC006F66E5 /* ThreeVC.m */,
+			);
+			path = three;
+			sourceTree = "<group>";
+		};
+		49DD33F1265A0214006F66E5 /* one */ = {
+			isa = PBXGroup;
+			children = (
+				49DD33FA265A0214006F66E5 /* 多继承 */,
+				49DD3406265A0214006F66E5 /* 代理 */,
+				49DD33F2265A0214006F66E5 /* 国际化 */,
+				49DD3400265A0214006F66E5 /* OneVC.h */,
+				49DD340C265A0214006F66E5 /* OneVC.m */,
+			);
+			path = one;
+			sourceTree = "<group>";
+		};
+		49DD33F2265A0214006F66E5 /* 国际化 */ = {
+			isa = PBXGroup;
+			children = (
+				49DD33F3265A0214006F66E5 /* InternationalizationVC.h */,
+				49DD33F4265A0214006F66E5 /* InternationalizationVC.m */,
+			);
+			path = "国际化";
+			sourceTree = "<group>";
+		};
+		49DD33F5265A0214006F66E5 /* YYModel的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				49DD33F6265A0214006F66E5 /* ModelPerson.m */,
+				49DD33F7265A0214006F66E5 /* YYModelBaseUseVC.m */,
+				49DD33F8265A0214006F66E5 /* YYModelBaseUseVC.h */,
+				49DD33F9265A0214006F66E5 /* ModelPerson.h */,
+			);
+			path = "YYModel的使用";
+			sourceTree = "<group>";
+		};
+		49DD33FA265A0214006F66E5 /* 多继承 */ = {
+			isa = PBXGroup;
+			children = (
+				49DD33FF265A0214006F66E5 /* CalculatorOperator.h */,
+				49DD33FC265A0214006F66E5 /* FXWCalculator.h */,
+				49DD33FE265A0214006F66E5 /* FXWCalculator.m */,
+				49DD33FB265A0214006F66E5 /* MultipleInheritVC.h */,
+				49DD33FD265A0214006F66E5 /* MultipleInheritVC.m */,
 			);
 			path = "多继承";
 			sourceTree = "<group>";
 		};
-		49DF70C12607822D00904B2C /* 代理 */ = {
+		49DD3401265A0214006F66E5 /* Masonry布局 */ = {
 			isa = PBXGroup;
 			children = (
-				49DF70C22607824400904B2C /* DelVC.h */,
-				49DF70C32607824400904B2C /* DelVC.m */,
-				49DF70CB2607826800904B2C /* FXWDelegate.h */,
-				49DF70CC260782BD00904B2C /* DelObj.h */,
-				49DF70CD260782BD00904B2C /* DelObj.m */,
+				49DD3405265A0214006F66E5 /* MasonryPriorityVC.h */,
+				49DD3403265A0214006F66E5 /* MasonryPriorityVC.m */,
+				49DD3404265A0214006F66E5 /* MasonryVC.h */,
+				49DD3402265A0214006F66E5 /* MasonryVC.m */,
+			);
+			path = "Masonry布局";
+			sourceTree = "<group>";
+		};
+		49DD3406265A0214006F66E5 /* 代理 */ = {
+			isa = PBXGroup;
+			children = (
+				49DD3407265A0214006F66E5 /* DelObj.h */,
+				49DD340A265A0214006F66E5 /* DelObj.m */,
+				49DD3408265A0214006F66E5 /* DelVC.h */,
+				49DD3409265A0214006F66E5 /* DelVC.m */,
+				49DD340B265A0214006F66E5 /* FXWDelegate.h */,
 			);
 			path = "代理";
+			sourceTree = "<group>";
+		};
+		49DD340D265A0214006F66E5 /* RAC的简单使用 */ = {
+			isa = PBXGroup;
+			children = (
+				49DD340E265A0214006F66E5 /* RACTwoVC.h */,
+				49DD3410265A0214006F66E5 /* RACTwoVC.m */,
+				49DD3411265A0214006F66E5 /* RACVC.h */,
+				49DD340F265A0214006F66E5 /* RACVC.m */,
+			);
+			path = "RAC的简单使用";
 			sourceTree = "<group>";
 		};
 		50F42788FAE63F5252AF8493 /* Frameworks */ = {
@@ -248,28 +344,6 @@
 			path = MorningUITests;
 			sourceTree = "<group>";
 		};
-		9D9FCDBC25D748E000E552BA /* YYModel的使用 */ = {
-			isa = PBXGroup;
-			children = (
-				9D9FCDBD25D7491000E552BA /* YYModelBaseUseVC.h */,
-				9D9FCDBE25D7491000E552BA /* YYModelBaseUseVC.m */,
-				9D9FCDCC25D7519B00E552BA /* ModelPerson.h */,
-				9D9FCDCD25D7519B00E552BA /* ModelPerson.m */,
-			);
-			path = "YYModel的使用";
-			sourceTree = "<group>";
-		};
-		9D9FCDD225D755E900E552BA /* Masonry布局 */ = {
-			isa = PBXGroup;
-			children = (
-				9D9FCDD325D7560700E552BA /* MasonryVC.h */,
-				9D9FCDD425D7560700E552BA /* MasonryVC.m */,
-				9DAAC40625D8C32300681606 /* MasonryPriorityVC.h */,
-				9DAAC40725D8C32300681606 /* MasonryPriorityVC.m */,
-			);
-			path = "Masonry布局";
-			sourceTree = "<group>";
-		};
 		9DBB033325D4A36E0080BEAD /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,25 +358,14 @@
 		9DBB033725D4A4300080BEAD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4965CA83261BC2260008F531 /* 多继承 */,
-				49DF70C12607822D00904B2C /* 代理 */,
-				9DC0C46A25D9D8D600D9B5E6 /* RAC的简单使用 */,
-				9D9FCDD225D755E900E552BA /* Masonry布局 */,
-				9D9FCDBC25D748E000E552BA /* YYModel的使用 */,
-				9DBB033825D4A4420080BEAD /* 国际化 */,
-				9D0F7DCF25D3CFC20028B615 /* ContentsViewController.h */,
-				9D0F7DD025D3CFC20028B615 /* ContentsViewController.m */,
+				49DD33F1265A0214006F66E5 /* one */,
+				49DD33EE265A0214006F66E5 /* two */,
+				49DD33EF265A0214006F66E5 /* three */,
+				49DD33ED265A0213006F66E5 /* four */,
+				49DD33EC265A0213006F66E5 /* MainTabBarVC.h */,
+				49DD33F0265A0214006F66E5 /* MainTabBarVC.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		9DBB033825D4A4420080BEAD /* 国际化 */ = {
-			isa = PBXGroup;
-			children = (
-				9DBB033925D4A46F0080BEAD /* InternationalizationVC.h */,
-				9DBB033A25D4A46F0080BEAD /* InternationalizationVC.m */,
-			);
-			path = "国际化";
 			sourceTree = "<group>";
 		};
 		9DBB037325D4AC090080BEAD /* View */ = {
@@ -321,17 +384,6 @@
 				9DBB037C25D4AE2F0080BEAD /* FXW_Tools.m */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		9DC0C46A25D9D8D600D9B5E6 /* RAC的简单使用 */ = {
-			isa = PBXGroup;
-			children = (
-				9DC0C46B25D9D8EF00D9B5E6 /* RACVC.h */,
-				9DC0C46C25D9D8EF00D9B5E6 /* RACVC.m */,
-				49EA039B25DCB4D0004E8FA3 /* RACTwoVC.h */,
-				49EA039C25DCB4D0004E8FA3 /* RACTwoVC.m */,
-			);
-			path = "RAC的简单使用";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,23 +546,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DBB033B25D4A46F0080BEAD /* InternationalizationVC.m in Sources */,
 				9DBB037625D4AC1C0080BEAD /* FXW_Button.m in Sources */,
-				49EA039D25DCB4D0004E8FA3 /* RACTwoVC.m in Sources */,
-				49DF70CE260782BD00904B2C /* DelObj.m in Sources */,
-				9DAAC40825D8C32300681606 /* MasonryPriorityVC.m in Sources */,
-				4965CA8D261BC4680008F531 /* FXWCalculator.m in Sources */,
-				9D0F7DD125D3CFC20028B615 /* ContentsViewController.m in Sources */,
+				49DD341E265A0214006F66E5 /* RACTwoVC.m in Sources */,
 				9DBB037D25D4AE2F0080BEAD /* FXW_Tools.m in Sources */,
-				49DF70C42607824400904B2C /* DelVC.m in Sources */,
-				9D9FCDD525D7560700E552BA /* MasonryVC.m in Sources */,
-				9DC0C46D25D9D8EF00D9B5E6 /* RACVC.m in Sources */,
-				9D9FCDCE25D7519B00E552BA /* ModelPerson.m in Sources */,
+				49DD341C265A0214006F66E5 /* OneVC.m in Sources */,
+				49DD3414265A0214006F66E5 /* ModelPerson.m in Sources */,
+				49DD341B265A0214006F66E5 /* DelObj.m in Sources */,
+				49DD3413265A0214006F66E5 /* InternationalizationVC.m in Sources */,
+				49DD3418265A0214006F66E5 /* MasonryVC.m in Sources */,
+				49DD3433265A03FD006F66E5 /* FourVC.m in Sources */,
 				9D0F7D7925D3CD9A0028B615 /* AppDelegate.m in Sources */,
+				49DD341A265A0214006F66E5 /* DelVC.m in Sources */,
+				49DD3417265A0214006F66E5 /* FXWCalculator.m in Sources */,
+				49DD3415265A0214006F66E5 /* YYModelBaseUseVC.m in Sources */,
 				9D0F7D8A25D3CD9B0028B615 /* main.m in Sources */,
+				49DD3427265A03C0006F66E5 /* TwoVC.m in Sources */,
 				9DBB032F25D4A3690080BEAD /* BaseTableVC.m in Sources */,
-				4965CA86261BC29A0008F531 /* MultipleInheritVC.m in Sources */,
-				9D9FCDBF25D7491000E552BA /* YYModelBaseUseVC.m in Sources */,
+				49DD342D265A03EC006F66E5 /* ThreeVC.m in Sources */,
+				49DD3412265A0214006F66E5 /* MainTabBarVC.m in Sources */,
+				49DD3416265A0214006F66E5 /* MultipleInheritVC.m in Sources */,
+				49DD341D265A0214006F66E5 /* RACVC.m in Sources */,
+				49DD3419265A0214006F66E5 /* MasonryPriorityVC.m in Sources */,
 				9DBB032E25D4A3690080BEAD /* BaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,6 +765,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 463F7G3CXF;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Morning/PrefixHeader.pch";
 				INFOPLIST_FILE = Morning/Info.plist;
@@ -717,7 +774,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kenshin.morning.Morning;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenshin.hangzhou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -730,6 +787,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 463F7G3CXF;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Morning/PrefixHeader.pch";
 				INFOPLIST_FILE = Morning/Info.plist;
@@ -738,7 +796,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kenshin.morning.Morning;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenshin.hangzhou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

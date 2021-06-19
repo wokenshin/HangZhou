@@ -21,16 +21,19 @@
 
 
 #pragma mark UITableViewDataSource
+//返回行树
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [self.mArrData count];
 }
 
 #pragma mark UITableViewDelegate
+//返回cell高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 50;
 }
 
 #pragma mark 绘制cell
+//返回cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"kenshin"];
     NSDictionary *dic     = [self.mArrData objectAtIndex:indexPath.row];
@@ -45,7 +48,7 @@
     
 }
 
-#pragma mark - 点击——Cell
+//点击——Cell
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //去除cell选中色
     [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:YES];
@@ -55,7 +58,7 @@
     [self baseTableVC_clickCellWithTitle:title];
 }
 
-//cell 被点击的时候会调用该方法
+//cell 被点击的时候会调用该方法，在子控制器中重写
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{}
 
 - (void)baseTableVC_reloadMyTableView{
@@ -80,6 +83,7 @@
     [_tableView reloadData];
 }
 
+//添加cell的方法
 - (void)baseTableVC_addDataWithTitle:(NSString *)title andDetail:(NSString *)detail{
     NSMutableDictionary *mDic = [[NSMutableDictionary alloc] init];
     [mDic setObject:title  forKey:@"title"];
@@ -87,8 +91,9 @@
     [self.mArrData addObject:mDic];
 }
 
+//懒加载
 - (NSMutableArray *)mArrData{
-    if (_mArrData == nil) {
+    if (!_mArrData) {
         _mArrData = [[NSMutableArray alloc] init];
     }
     return _mArrData;
