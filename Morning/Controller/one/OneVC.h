@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ContentsViewController : BaseTableVC
+@interface OneVC : BaseTableVC
 
 @end
 
